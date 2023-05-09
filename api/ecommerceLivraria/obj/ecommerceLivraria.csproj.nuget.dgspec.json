@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {}
+    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {}
   },
   "projects": {
-    "d:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {
+    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
+        "projectUniqueName": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
         "projectName": "ecommerceLivraria",
-        "projectPath": "d:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
+        "projectPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
         "packagesPath": "C:\\Users\\csouz\\.nuget\\packages\\",
-        "outputPath": "d:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\obj\\",
+        "outputPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\csouz\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,14 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[6.0.4, )"
             }
