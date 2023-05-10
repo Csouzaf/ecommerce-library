@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {}
+    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce csharp\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {
+    "D:\\OneDrive\\Programação\\Projeto livraria ecommerce csharp\\api\\ecommerceLivraria\\ecommerceLivraria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
+        "projectUniqueName": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce csharp\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
         "projectName": "ecommerceLivraria",
-        "projectPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
+        "projectPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce csharp\\api\\ecommerceLivraria\\ecommerceLivraria.csproj",
         "packagesPath": "C:\\Users\\csouz\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce C#\\api\\ecommerceLivraria\\obj\\",
+        "outputPath": "D:\\OneDrive\\Programação\\Projeto livraria ecommerce csharp\\api\\ecommerceLivraria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\csouz\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.4, )"
