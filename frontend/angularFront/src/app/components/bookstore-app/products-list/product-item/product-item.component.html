@@ -1,0 +1,17 @@
+<div class="card shadow-sm">
+  <img src='{{ "/frontend/angularFront/src/assets/images" + livro.img + "jpg" }}' alt="" class="bd-placeholder-img card-img-top" width="100%">
+
+  <div class="card-body">
+      <p class="card-text">{{ livro.nome }}</p>
+      <p class="card-text">{{ livro.categoria }}</p>
+      <p class="card-text">{{ livro.quant }}</p>
+      <p class="card-text">{{ livro.preco | currency:'BRL' }} </p>
+
+      <div class="btn-group">
+        <button type="button" class="btn bt-sm btn-primary">Comprar</button>
+        <button type="button" class="btn btn-sm btn-outline-info">Detalhes</button>
+
+      </div>
+  </div>
+
+</div>

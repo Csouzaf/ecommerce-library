@@ -7,8 +7,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// // cria um novo contexto
+// var newContext = new ToDoContextModel(options);
+
+// // exclui todos os dados do contexto antigo
+// newContext.Database.EnsureDeleted();
+
+// // cria novamente o banco de dados
+// newContext.Database.EnsureCreated();
+
 builder.Services.AddDbContext<ToDoContextModel>(options =>
-    options.UseInMemoryDatabase("ToDoList"));
+    options.UseInMemoryDatabase(databaseName: "ToDoList"));
+
+builder.Services.BuildServiceProvider();
+
 
 builder.Services.AddCors(options => 
 {

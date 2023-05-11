@@ -1,3 +1,5 @@
+import { Observable, catchError } from 'rxjs';
+import { Book } from './model/Book';
 import { ServicesService } from './services.service';
 import { Component, Injectable, OnInit } from '@angular/core';
 
@@ -11,29 +13,34 @@ import { Component, Injectable, OnInit } from '@angular/core';
 
 export class ProductsListComponent implements OnInit{
 
-  livros: any =[];
+  livros: Book[] = [];
 
-  servicesService : ServicesService;
+  constructor(private servicesService: ServicesService){
 
-  constructor(servicesService: ServicesService){
+    // this.servicesService = servicesService;
 
-    this.servicesService = servicesService;
   }
 
   ngOnInit(): void {
 
-    this.livros = this.servicesService.getBook().subscribe((
-      data) => {
-        this.livros = data;
-        console.log(this.livros)
-      },
-      error => {
-        console.log(error)
-      }
+    // this.livros = this.servicesService.getBook().subscribe((
+    //   data) => {
+    //     this.livros = data;
+    //     console.log(this.livros)
+    //   },
+    //   error => {
+    //     console.log(error)
+    //   }
 
-    )
-    
+    // )
+      this.servicesService.getBook().subscribe(
+        data => {
+          this.livros = data
+          console.log(this.livros)
+        },
+        error => {
+          console.error(error);
+        }
+      )
   }
-
-
 }
