@@ -6,6 +6,6 @@ export class Book
   preco!:number
   quant!:number
   categoria!:string
-  img!:string
+  imagem!:string
 
 }

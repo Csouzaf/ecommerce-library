@@ -15,7 +15,7 @@ namespace ecommerceLivraria.Models
         public int Quant { get; set; }
        
         public string Categoria { get; set; } = string.Empty;
-        public string Img { get; set; } = string.Empty;
+        public string Imagem { get; set; } = string.Empty;
 
     }
 }

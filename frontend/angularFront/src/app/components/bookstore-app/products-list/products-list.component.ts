@@ -15,6 +15,11 @@ export class ProductsListComponent implements OnInit{
 
   livros: Book[] = [];
 
+  // imagemSelecionada: string = '';
+
+  // receberImagem(imagem: string) {
+  //   this.imagemSelecionada = imagem;
+  // }
   constructor(private servicesService: ServicesService){
 
     // this.servicesService = servicesService;
@@ -37,9 +42,9 @@ export class ProductsListComponent implements OnInit{
         data => {
           this.livros = data
           console.log(this.livros)
-        },
-        error => {
-          console.error(error);
+        // },
+        // error => {
+        //   console.error(error);
         }
       )
   }

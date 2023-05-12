@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Book } from '../model/Book';
 
 @Component({
@@ -6,16 +6,21 @@ import { Book } from '../model/Book';
   templateUrl: './product-item.component.html',
   styleUrls: ['./product-item.component.scss']
 })
-export class ProductItemComponent implements OnInit{
+export class ProductItemComponent {
 
   @Input()
   livro!: Book
+  // @Output() imagemSelecionada = new EventEmitter<string>()
+
+  // selecionarImagem(imagem:string){
+  //   this.imagemSelecionada.emit(imagem)
+  // }
 
   constructor(){}
 
-  ngOnInit(): void {
-
-  }
+  // getImagemURL(){
+  //   return `/assets/images/ +${this.livro.imagem} +'.jpg`
+  // }
 
 
 }

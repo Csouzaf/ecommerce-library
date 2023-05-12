@@ -1,11 +1,12 @@
 <div class="card shadow-sm">
-  <img src='{{ "/frontend/angularFront/src/assets/images" + livro.img + "jpg" }}' alt="" class="bd-placeholder-img card-img-top" width="100%">
+  <img [src]= "'/assets/images/' + livro.imagem + '.jpg'" alt="" class="bd-placeholder-img card-img-top" height="1%" >
+<!-- (click)="selecionarImagem(livro.img) -->
 
   <div class="card-body">
-      <p class="card-text">{{ livro.nome }}</p>
-      <p class="card-text">{{ livro.categoria }}</p>
-      <p class="card-text">{{ livro.quant }}</p>
-      <p class="card-text">{{ livro.preco | currency:'BRL' }} </p>
+      <section class="card-text">{{ livro.nome }}</section>
+      <section class="card-text">{{ livro.categoria }}</section>
+      <section class="card-text">{{ livro.quant }}</section>
+      <section class="card-text">{{ livro.preco | currency:'BRL' }} </section>
 
       <div class="btn-group">
         <button type="button" class="btn bt-sm btn-primary">Comprar</button>
